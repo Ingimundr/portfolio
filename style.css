@@ -5,6 +5,7 @@
     box-sizing: border-box;
          /* взяли шрифты с google fonts и прописали правило font-family: 'Inter', sans-serif;*/
     font-family: 'Inter', sans-serif;
+    font-size: 20px;
 }
 
 /* header */
@@ -52,23 +53,35 @@
 .hero-name {
     text-align: center;
     margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: bold;
 }
 .info-box{
     display: flex;
+    height: fit-content;
+    padding: 24px 16px;
     border-radius: 24px;
-    border: 1px solid gold;
     min-height: 445px;
     background-color: #F8F8FD;
 }
+.info-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .info-list > li{
-    padding: 8px;
-    margin-left: 50px;
+    padding: 12px 8px;
     padding-right: 50px;
     list-style-type: none;
     color: #9999A3;
+    border-bottom: 1px solid #EDEDF9;
 }
+.info-list > li:first-child {padding-top: 0;}
+.info-list > li:last-child {padding-bottom: 0; border: none;}
 .right > li{
    color: black;
+   white-space: nowrap; /* Считаю, что это костыль */
+   /* Чтобы все записи были на одном уровне. Думаю нужно использовать таблицу */
 }
 
 /* main */
@@ -97,7 +110,10 @@
 .main-list:nth-child(1n) {
     color: #bcbcc2;
 }
-.work-date-interval {color: black}
+.work-date-interval {
+    margin-bottom: 4px;
+    color: black;
+}
 
 .main-text {
     background-color: #a9a9fd;
