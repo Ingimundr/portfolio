@@ -1,0 +1,136 @@
+/* basic */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+         /* взяли шрифты с google fonts и прописали правило font-family: 'Inter', sans-serif;*/
+    font-family: 'Inter', sans-serif;
+}
+
+/* header */
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 50px;
+    /* это правила для центровочного контейнера */
+}
+
+.header-wrapper {
+    padding-top: 50px;
+    padding-bottom: 32px;
+    display: flex; 
+    margin: 0 auto;
+}
+.header-contacts {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.header-phone-number {
+    margin-bottom: 12px;
+}
+.img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.header_social {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.social_icon_vk, .social_icon_telegram, .social_icon_whatsUp {
+    width: 32px;
+    height: 23px;  
+}
+
+/* фио и информация справа от фото */
+.header-info {
+    margin-left: 56px;
+}
+.hero-name {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.info-box{
+    display: flex;
+    border-radius: 24px;
+    border: 1px solid gold;
+    min-height: 445px;
+    background-color: #F8F8FD;
+}
+.info-list > li{
+    padding: 8px;
+    margin-left: 50px;
+    padding-right: 50px;
+    list-style-type: none;
+    color: #9999A3;
+}
+.right > li{
+   color: black;
+}
+
+/* main */
+
+.container-right-60 {
+    margin-left: 320px;
+}
+
+.header-section {
+    color: #bcbcc2;
+    margin-bottom: 30px;
+}
+.main-wrapper {
+    padding-top: 32px;
+}
+.main-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.special-secret {display: none;}
+.arm {background-color: olive; opacity: 0.6;}
+.main-content {
+    max-width: 64%;
+}
+.main-list:nth-child(1n) {
+    color: #bcbcc2;
+}
+.work-date-interval {color: black}
+
+.main-text {
+    background-color: #a9a9fd;
+    color: white;
+    border-radius: 7px;
+    padding: 5px;
+    display: inline-block;
+}
+.more {
+    background-color: #f1a9fd;
+    color: white;
+    border-radius: 7px;
+    padding: 5px;
+}
+.description-work {padding-top: 20px;}
+
+/* skills, lang */
+
+.work-experience, .skills, .language {
+    margin-bottom: 24px;
+}
+
+.skills span, .language span {
+    padding: 12px;
+    margin: 6px;
+    border-radius: 12px;
+    background-color: #f5f5fa;
+    display: inline-block;
+}
+
+/* footer */
+.about-me {padding-bottom: 50px;}
+.about-me p:not(.header-section) {
+    text-indent: 18px;
+    margin-bottom: 8px;
+}
